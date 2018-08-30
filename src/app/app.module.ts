@@ -15,14 +15,16 @@ import { NotAuthGuard } from './shared/notauth.guard';
 import { HomeComponent } from './home.component';
 import { AlertsService } from './shared/alerts/alerts.service';
 import { AlertsComponent } from './shared/alerts/alerts.component';
+import { UsersComponent } from './users/users.component';
+import { UserComponent } from './user/user.component';
 
 export const firebaseConfig = {
-    apiKey: 'AdIzaSyDZRMQ1axFmRcg5yv1unNFEqnwXTckXGMg44', /// This is a random test key. you need to change this API key to your API key.
-    authDomain: '',
-    databaseURL: '',
-    projectId: '',
-    storageBucket: '',
-    messagingSenderId: ''
+  apiKey: "AIzaSyDOicS3PNywWR3JdO0RgmbOIYya4HClKqc",
+  authDomain: "rgengineering-b394c.firebaseapp.com",
+  databaseURL: "https://rgengineering-b394c.firebaseio.com",
+  projectId: "rgengineering-b394c",
+  storageBucket: "",
+  messagingSenderId: "924137236064"
 };
 
 @NgModule({
@@ -30,7 +32,9 @@ export const firebaseConfig = {
     AppComponent,
     HeaderComponent,
     AlertsComponent,
-    HomeComponent
+    HomeComponent,
+    UsersComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
